@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
 }
 
 /* dark 01 */
-.text-black{
+.text-black {
     color: #131313;
 }
 
@@ -35,12 +35,12 @@
 
 }
 
-.bg-light{
+.bg-light {
     background-color: #ff900e1a;
 
 }
 
-.btn-primary{
+.btn-primary {
     font-size: 1.25rem;
     font-weight: 600;
     padding: 20px 25px;
@@ -60,13 +60,14 @@
 
 }
 
-.brand-name{
+.brand-name {
     font-size: 2.8rem;
     font-weight: 700;
 }
 
 .menue-bar {
     list-style: none;
+    gap: 30px;
 
 }
 
@@ -74,37 +75,48 @@
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 500;
-    margin-right: 30px;
+   
 }
 
-.navbar,.banner {
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 /* banner related style */
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 100px auto 0;
     text-align: center;
 
 }
 
-.banner-title{
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
 
 }
 
-.banner-info{
-    margin: 32px 0 32px ;
+.banner-info {
+    margin: 32px 0 32px;
 }
 
-.banner-img-contaienr{
+.banner-img-contaienr {
     padding: 50px 0px 45px;
 }
 
-.banner-img-contaienr>img{
+.banner-img-contaienr>img {
     width: 100%;
-    
+
+}
+
+
+/* media query for small devices */
+@media screen and (max-width: 576px) {
+    .navbar,
+    .menue-bar {
+        flex-direction: column;
+    }
+
 }
