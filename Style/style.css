@@ -173,7 +173,8 @@ section {
 .features-content,
 .features-img-container {
     flex: 1;
-    min-width: 0;
+    position: relative;
+
 }
 
 .features-title {
@@ -209,8 +210,8 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
-    bottom: 130px;
+    position: absolute;
+    bottom: -77px;
     left: -92px;
 }
 
@@ -250,6 +251,7 @@ section {
     }
 
     .experience-badge {
+        position: relative;
         width: 290px;
         height: 160px;
         font-size: 1.2rem;
@@ -302,6 +304,7 @@ section {
     }
 
     .experience-badge {
+        position: relative;
         margin: 0 auto;
         width: 220px;
         height: 110px;
