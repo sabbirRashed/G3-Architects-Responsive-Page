@@ -224,7 +224,8 @@ section {
 }
 
 /* facta style */
-.some-facts-info{
+.some-facts-info,
+.our-sponsor-info{
     max-width: 542px;
     margin-top: 24px;
 }
@@ -260,6 +261,43 @@ section {
 }
 
 
+/* our sponsors related style */
+.our-sponsor{
+    text-align: center;
+    
+}
+
+
+.our-sponsor-info{
+    margin: 24px auto;
+}
+
+.sponsors-logo-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 155px;
+    
+}
+
+.sponsors-logo-container>img{
+    filter: grayscale(100%);
+}
+
+.copyright-info{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+
+footer{
+    padding: 130px 0;
+    
+}
 
 
 /* responsive for medium devices */
