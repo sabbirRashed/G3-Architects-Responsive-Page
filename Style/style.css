@@ -75,7 +75,7 @@
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 500;
-   
+
 }
 
 .navbar,
@@ -106,17 +106,114 @@
     padding: 50px 0px 45px;
 }
 
-.banner-img-contaienr>img {
+img {
     width: 100%;
 
 }
 
+/* main area */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+section {
+    margin-top: 130px;
+}
+
+
+/* quick list section */
+.quick-list {
+    padding: 0px 60px;
+    align-items: center;
+    gap: 70px;
+}
+
+.quick-list-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    flex: 1;
+
+}
+
+.quick-list-content {
+    max-width: 537px;
+    flex: 1;
+}
+
+.quick-list-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+
+}
+
+#black-portion,
+#orange-portion {
+    font-weight: 700;
+}
+
+#orange-portion {
+    color: #FF900E;
+}
+
+.quick-list-info {
+    margin: 24px 0 32px;
+}
+
+
+
 
 /* media query for small devices */
 @media screen and (max-width: 576px) {
+
     .navbar,
-    .menue-bar {
+    .menue-bar,
+    .quick-list {
         flex-direction: column;
     }
 
+    .quick-list-title {
+        font-size: 1.8rem;
+    }
+
+    .quick-list-info {
+        font-size: 0.85rem;
+    }
+
+    /* quick list section responsive */
+    main {
+        width: 95%;
+    }
+
+    .quick-list {
+        padding: 0;
+    }
+
+    .quick-list-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+@media screen and (576px<=width <=992px) {
+    .quick-list {
+        flex-direction: column;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .quick-list {
+        padding: 0;
+        text-align: center;
+        align-items: stretch;
+    }
+
+    .quick-list-content {
+        margin: 0 auto;
+    }
 }
