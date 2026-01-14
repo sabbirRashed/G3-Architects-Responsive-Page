@@ -118,7 +118,7 @@
 
 .banner-img,
 .quick-list-img,
-.feature-img{
+.feature-img {
     width: 100%;
 
 }
@@ -225,22 +225,22 @@ section {
 
 /* facta style */
 .some-facts-info,
-.our-sponsor-info{
+.our-sponsor-info {
     max-width: 542px;
     margin-top: 24px;
 }
 
-.facts-card-container{
+.facts-card-container {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-   justify-items: center;
-    
+    justify-items: center;
+
 }
 
-.facts-card{
-    width: 240px;
-    height: 240px;
+.facts-card {
+    width: 15rem;
+    height: 15rem;
     border: 1px solid #FF900E;
     border-radius: 8px;
     justify-content: center;
@@ -248,13 +248,13 @@ section {
     text-align: center;
 }
 
-.facts-card-title{
+.facts-card-title {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 10px;
 }
 
-.facts-card-info{
+.facts-card-info {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 5px;
@@ -262,29 +262,32 @@ section {
 
 
 /* our sponsors related style */
-.our-sponsor{
+.our-sponsor {
     text-align: center;
-    
+
 }
 
 
-.our-sponsor-info{
+.our-sponsor-info {
     margin: 24px auto;
 }
 
-.sponsors-logo-container{
+.sponsors-logo-container {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
     gap: 155px;
-    
+
 }
 
-.sponsors-logo-container>img{
+.sponsors-logo-container>img {
     filter: grayscale(100%);
+    width: 80%;
+    height: auto;
 }
 
-.copyright-info{
+.copyright-info {
     max-width: 1440px;
     margin: 0 auto;
     padding: 40px;
@@ -294,17 +297,27 @@ section {
 }
 
 
-footer{
+footer {
     padding: 130px 0;
-    
+
 }
 
 
 /* responsive for medium devices */
 @media screen and (576px<=width <=992px) {
+    html {
+        font-size: 12px;
+    }
+
+    .facts-card-container,
+    .sponsors-logo-container {
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+    }
 
     .quick-list,
-    .our-features {
+    .our-features,
+    .navbar {
         flex-direction: column;
     }
 
@@ -322,9 +335,20 @@ footer{
         margin: 0 auto;
     }
 
+    /* header responsive */
+    .navbar {
+        gap: 30px;
+    }
+
     /* feature section responsive */
-    .our-features {
+    .our-features,
+    .facts-card-container,
+    .sponsors-logo-container {
         gap: 100px;
+    }
+
+    .features-info{
+        max-width: 645px;
     }
 
     .experience-badge {
@@ -339,7 +363,20 @@ footer{
     #experience-year {
         font-size: 2.5rem;
     }
+
+    /* footer responsive */
+    footer {
+        padding: 100px 0 0;
+    }
+
+    .copyright-info {
+        padding: 120px;
+        border-radius: 0px;
+
+    }
+
 }
+
 
 
 /* media query for small devices */
@@ -353,13 +390,30 @@ footer{
     }
 
     .section-title,
-    #experience-year {
+    #experience-year,
+    .brand-name {
         font-size: 2rem;
     }
 
+    .banner-info,
     .quick-list-info,
-    .features-info,.feature-card-info {
+    .features-info,
+    .feature-card-info {
         font-size: 0.85rem;
+    }
+
+    .btn-primary,
+    .copyright-info {
+        font-size: 1rem;
+    }
+
+    /* header section responsive */
+    .navbar {
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
     }
 
     /* quick list section responsive */
@@ -371,13 +425,21 @@ footer{
         padding: 0;
     }
 
-    .quick-list-img-container {
+    .quick-list-img-container,
+    .facts-card-container,
+    .sponsors-logo-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
     /* features section responsive */
-    .our-features {
+    .our-features,
+    .sponsors-logo-container {
         gap: 50px;
+    }
+
+    .facts-card-container,
+    .navbar {
+        gap: 24px;
     }
 
     .experience-badge {
@@ -389,5 +451,23 @@ footer{
         bottom: 0px;
         left: 0px;
     }
+
+    /* sponsors section responsive */
+    .sponsors-logo-container>img {
+        width: 20%;
+        
+    }
+
+    /* footer responsive */
+    footer {
+        padding: 100px 0 0;
+    }
+
+    .copyright-info {
+        padding: 80px;
+        border-radius: 0px;
+
+    }
+
 
 }
