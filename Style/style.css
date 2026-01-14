@@ -66,7 +66,7 @@
 .navbar {
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding: 50px 10px 0px;
 
 }
 
@@ -126,6 +126,7 @@
 /* main area */
 main {
     max-width: 1440px;
+    width: 95%;
     margin: 0 auto;
 
 }
@@ -321,10 +322,6 @@ footer {
         flex-direction: column;
     }
 
-    main {
-        width: 95%;
-    }
-
     .quick-list {
         padding: 0;
         text-align: center;
@@ -347,7 +344,7 @@ footer {
         gap: 100px;
     }
 
-    .features-info{
+    .features-info {
         max-width: 645px;
     }
 
@@ -403,7 +400,8 @@ footer {
     }
 
     .btn-primary,
-    .copyright-info {
+    .copyright-info,
+    .menue {
         font-size: 1rem;
     }
 
@@ -417,9 +415,6 @@ footer {
     }
 
     /* quick list section responsive */
-    main {
-        width: 95%;
-    }
 
     .quick-list {
         padding: 0;
@@ -455,7 +450,7 @@ footer {
     /* sponsors section responsive */
     .sponsors-logo-container>img {
         width: 20%;
-        
+
     }
 
     /* footer responsive */
