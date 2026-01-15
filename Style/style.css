@@ -189,6 +189,10 @@ section {
     margin: 24px 0px 30px;
 }
 
+.feature-card-container {
+    display: grid;
+}
+
 .feature-card {
     padding: 30px;
     margin-bottom: 20px;
@@ -276,16 +280,15 @@ section {
 .sponsors-logo-container {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    gap: 155px;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+
 
 }
 
 .sponsors-logo-container>img {
     filter: grayscale(100%);
-    width: 80%;
-    height: auto;
+
 }
 
 .copyright-info {
@@ -305,15 +308,19 @@ footer {
 
 
 /* responsive for medium devices */
-@media screen and (576px<=width <=992px) {
-    html {
-        font-size: 14px;
-    }
+@media screen and (min-width: 668px) and (max-width:992px) {
 
     .facts-card-container,
-    .sponsors-logo-container {
+    .sponsors-logo-container,
+    .feature-card-container {
         grid-template-columns: repeat(2, auto);
         justify-content: center;
+    }
+
+    .our-features,
+    .facts-card-container,
+    .sponsors-logo-container {
+        gap: 100px;
     }
 
     .quick-list,
@@ -323,9 +330,8 @@ footer {
     }
 
     .quick-list {
-        padding: 0;
         text-align: center;
-        align-items: stretch;
+
     }
 
     .quick-list-content {
@@ -338,10 +344,10 @@ footer {
     }
 
     /* feature section responsive */
-    .our-features,
-    .facts-card-container,
-    .sponsors-logo-container {
-        gap: 100px;
+    .feature-card-container {
+        column-gap: 50px;
+        padding: 0px 50px;
+        margin-top: 50px;
     }
 
     .features-info {
@@ -361,6 +367,16 @@ footer {
         font-size: 2.5rem;
     }
 
+    /* facts section responsive */
+    .facts-card{
+        height: 12rem;
+    }
+
+    /* sponsors section */
+    .sponsors-logo-container>img {
+        width: 80%;
+    }
+
     /* footer responsive */
     footer {
         padding: 100px 0 0;
@@ -377,11 +393,13 @@ footer {
 
 
 /* media query for small devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 668px) {
+    section {
+        margin-top: 80px;
+    }
 
     .navbar,
     .menue-bar,
-    .quick-list,
     .our-features {
         flex-direction: column;
     }
@@ -410,6 +428,15 @@ footer {
         text-align: center;
     }
 
+    .banner-content {
+        margin-top: 70px;
+
+    }
+
+    .banner-img-contaienr {
+        padding-bottom: 30px;
+    }
+
     .banner-title {
         font-size: 2.5rem;
     }
@@ -418,6 +445,8 @@ footer {
 
     .quick-list {
         padding: 0;
+         flex-direction: column-reverse;
+
     }
 
     .quick-list-img-container,
@@ -447,7 +476,23 @@ footer {
         left: 0px;
     }
 
+    /* some facts section responsive */
+    .facts-card-container {
+        margin-top: 70px;
+
+    }
+
+    .facts-card {
+        width: 15rem;
+        height: 10rem;
+
+    }
+
     /* sponsors section responsive */
+    .sponsors-logo-container {
+        justify-items: center;
+    }
+
     .sponsors-logo-container>img {
         width: 20%;
 
