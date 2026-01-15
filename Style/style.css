@@ -307,7 +307,7 @@ footer {
 /* responsive for medium devices */
 @media screen and (576px<=width <=992px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .facts-card-container,
